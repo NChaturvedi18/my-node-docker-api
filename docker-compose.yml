@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  # Service 1: Your Node.js API
+  api:
+    build: .
+    ports:
+      - "2000:2000"
+    depends_on:
+      - redis
+    environment:
+      - PORT=2000
+      - REDIS_URL=redis://redis:6379
+
+  # Service 2: Official Redis Image
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"

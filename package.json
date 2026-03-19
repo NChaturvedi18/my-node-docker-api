@@ -1,0 +1,27 @@
+{
+  "name": "my-node-docker-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/redisAndLinkServiceDocker.js",
+  "scripts": {
+    "start": "node src/express.js",
+    "test": "node src/redisAndLinkServiceDocker.js",
+    "docker": "docker compose up --build -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NChaturvedi18/my-node-docker-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/NChaturvedi18/my-node-docker-api/issues"
+  },
+  "homepage": "https://github.com/NChaturvedi18/my-node-docker-api#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "redis": "^5.11.0"
+  }
+}
